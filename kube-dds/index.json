@@ -2,12 +2,13 @@
   "title": "Antimalware Light System Scan",
   "description": "Scan System for malware that publishes data models over DDS",
   "difficulty": "Beginner",
-  "time": "10 min",
+  "time": "10 miniutes",
   "details": {
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "code": "foreground.sh"
       },
       {
         "title": "Step 2",
@@ -27,16 +28,21 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "courseData":  "env-init.sh"
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{"file": "clamav-deployment.yaml", "target": "/root"}]
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "minikube-running"
+    "dockerimage": "minikube-running:1.20",
+    "port": 30000
   }
 }
