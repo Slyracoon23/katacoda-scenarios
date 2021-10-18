@@ -22,7 +22,7 @@ spec:
       containers:
       - name: clamav
         image: earlpotters/rticlamav:latest
-        command: ["./scan.sh"]
+        # command: ["./scan.sh"]
         # imagePullPolicy: Never
         volumeMounts:
         - name: host-fs
