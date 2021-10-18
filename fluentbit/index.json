@@ -1,0 +1,48 @@
+{
+  "title": "FluentBit Mcafee DDS datamodels",
+  "description": "Demo to show how Fluentbit plugin can scan for antimalware models and publish of DDS",
+  "difficulty": "Intermediate",
+  "time": "10 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md",
+        "code": "foreground.sh"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{"file": "fluent-bit-configmap.yaml", "target": "/root"},
+        {"file": "fluent-bit-ds.yaml", "target": "/root"},
+        {"file": "fluent-bit-role-1.22.yaml", "target": "/root"},
+        {"file": "fluent-bit-role-binding-1.22.yaml", "target": "/root"},
+        {"file": "fluent-bit-service-account.yaml", "target": "/root"},
+        {"file": "mcaffee-output.yaml", "target": "/root"} ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "dockerimage": "minikube-running:1.20",
+    "port": 30000
+  }
+}
