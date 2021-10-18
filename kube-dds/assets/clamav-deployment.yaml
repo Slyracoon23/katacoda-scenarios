@@ -22,12 +22,13 @@ spec:
       containers:
       - name: clamav
         image: earlpotters/rticlamav:latest
-        # command: ["./scan.sh"]
+        command: ["./scan.sh"]
         # imagePullPolicy: Never
         volumeMounts:
         - name: host-fs
           mountPath: /host-fs/opt
           readOnly: true
+      terminationGracePeriodSeconds: 5
       volumes:
       - name: host-fs
         hostPath:
