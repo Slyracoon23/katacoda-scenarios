@@ -6,7 +6,7 @@ Let’s perform another update, and deploy image tagged as 'broken' :
 
 Use get deployments to see the status of the deployment:
 
-`kubectl get deployments`{{execute}
+`kubectl get deployments`{{execute}}
 
 And something is wrong… We do not have running Pod available. List the Pods again:
 

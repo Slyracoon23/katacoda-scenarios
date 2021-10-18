@@ -2,13 +2,14 @@
 
 Pods that are running inside Kubernetes are running on a private, isolated network. By default they are visible from other pods and services within the same kubernetes cluster, but not outside that network. When we use kubectl, we're interacting through an API endpoint to communicate with our application.
 
-To view to the out coming from our clamav pod, we can use the log command! Use the following command:
+To view to the output coming from our clamav pod, we can use the log command! Use the following command:
 
-`kubectl logs $(kubectl get pods --no-headers -o custom-columns=":metadata.name)`{{execute}}
+`kubectl logs $(kubectl get pods --no-headers -o custom-columns=":metadata.name")`{{execute}}
 
 To view to the DDS samples coming from our pod, we will create a temporary pod to see if our dds application is publishing topics! Use the following command:
 
 `kubectl run dds-viewer --rm -i --tty --image earlpotters/dds -- bash`{{execute}}
+(this might take a while)
 
 Hopefully a shell poped up. Run the dds application spy to view the antiVirus output
 
