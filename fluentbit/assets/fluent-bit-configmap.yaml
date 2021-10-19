@@ -24,25 +24,25 @@ data:
   input-kubernetes.conf: |
     [INPUT]
         Name           tail
-        Path           /var/log/containers/*.log
+        Path           /var/log/containers/mc*.log
         Tag            mcafee.start
         Parser         beginLine
 
     [INPUT]
         Name            tail
-        Path            /var/log/containers/*.log
+        Path            /var/log/containers/mc*.log
         Tag             mcafee.end
         Parser          shutdownLine
 
     [INPUT]
         Name            tail
-        Path            /var/log/containers/*.log
+        Path            /var/log/containers/mc*.log
         Tag             mcafee.error
         Parser          skipFile
 
     [INPUT]
         Name tail
-        Path  /var/log/containers/*.log
+        Path  /var/log/containers/mc*.log
         Tag   mcafee.found
         Parser  foundVirus
 
@@ -69,7 +69,7 @@ data:
 
     [OUTPUT]
         Name            dds_str
-        Match           *
+        Match           mcafee*
 
         # dds_str configuration 
         # XMLFile is optional, if not provided will use the default user's qos search path
