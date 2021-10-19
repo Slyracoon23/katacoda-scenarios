@@ -1,4 +1,4 @@
-## Viewing the output
+## Viewing DDS
 
 Let's take a look at our pods.
 
@@ -8,6 +8,9 @@ We can see that our fluent-bit daemon has launched. Let's see the logging detail
 
 `kubectl logs fluent-bit-<hash> -n logging`
 
-Well Done, we are parsing the output of the Mcafee! Let's see if DDS is being published.
+Well done! We are parsing the output of the Mcafee! Let's see if DDS is being published.
 
 `kubectl run dds-viewer --rm -i --tty --image earlpotters/dds -- bash`{{execute}}
+
+`./bin/rtiddsspy -printSample`{{execute}}
+

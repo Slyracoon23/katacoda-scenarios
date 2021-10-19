@@ -20,7 +20,7 @@ There is no image called broken in the repository. Let’s roll back to our prev
 
 `kubectl rollout undo deployments/clamav`{{execute}}
 
-The rollout command reverted the deployment to the previous known state ('new' of the image). Updates are versioned and you can revert to any previously know state of a Deployment. List again the Pods:
+The rollout command reverted the deployment to the previous known state (tag:'new' of the image). Updates are versioned and you can revert to any previously know state of a Deployment. List again the Pods:
 
 `kubectl get pods`{{execute}}
 

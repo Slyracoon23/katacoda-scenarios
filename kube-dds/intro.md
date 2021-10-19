@@ -1,5 +1,5 @@
-# In this scenario you'll learn how scan a machine using Clamav using Kubernetes #
+# In this scenario you'll learn how scan a machine using Clamav with Kubernetes #
 
-DDS solves the problem of handling multiple Data Model configuration, deploying the AV-softwares in containers using kuberenetes Pods. The resulting cluster allows kuberneretes features while having DDS features
+ Deploying ClamAV in containers using kuberenetes Pods that uses DDS to publish its Data model. The resulting cluster allows kuberneretes features and   DDS features.
 
-More details on DDS/Kuberentes can be found at https://github.com/kubernetes/kubeadm
+

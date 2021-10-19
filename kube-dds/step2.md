@@ -6,8 +6,6 @@ Great! You just deployed your first application by creating a deployment. This p
 - scheduled the application to run on that Node
 - configured the cluster to reschedule the instance on a new Node when needed
 
-The current command scan is scanning for any viruses on the host machine.
-
 To list your deployments use the `get deployments` command:
 
 `kubectl get deployments`{{execute}}
@@ -16,4 +14,7 @@ We see that there is 1 deployment running a single instance of your app. The ins
 
 To view to logs of our pod, use the `logs <pod>` command:
 
-`kubectl logs $(kubectl get pods --no-headers -o custom-columns=":metadata.name)`{{execute}}
+`kubectl logs $(kubectl get pods --no-headers -o custom-columns=":metadata.name")`{{execute}}
+
+As you can see, the application is scanning for any viruses on the host machine.
+

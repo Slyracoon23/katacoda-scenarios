@@ -1,4 +1,4 @@
-# Build an Deploy the Mcafee microservice
+# Build and Deploy the Mcafee microservice
 
 To begin, make sure your Kubernetes environment is set up. Once the terminal has finished outputting messages and is ready for input it should be setup. To confirm it is ready please run the following command:
 

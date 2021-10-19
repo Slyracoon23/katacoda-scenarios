@@ -6,16 +6,16 @@ To view to the output coming from our clamav pod, we can use the log command! Us
 
 `kubectl logs $(kubectl get pods --no-headers -o custom-columns=":metadata.name")`{{execute}}
 
-To view to the DDS samples coming from our pod, we will create a temporary pod to see if our dds application is publishing topics! Use the following command:
+To view the DDS samples coming from our pod, we will create a temporary pod to see if our dds application is publishing topics! Use the following command:
 
 `kubectl run dds-viewer --rm -i --tty --image earlpotters/dds -- bash`{{execute}}
 (this might take a while)
 
-Hopefully a shell poped up. Run the dds application spy to view the antiVirus output
+Hopefully a shell popped up. Run the dds application spy to view the antiVirus output
 
 `./bin/rtiddsspy -printSample`{{execute}}
 
-You can know see the samples being published!
+You can now see the samples being published!
 
 When you are done do Ctrl-C and run the following command to get back to the root shell:
 

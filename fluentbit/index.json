@@ -1,6 +1,6 @@
 {
   "title": "FluentBit Mcafee DDS datamodels",
-  "description": "Demo to show how Fluentbit plugin can scan for antimalware models and publish of DDS",
+  "description": "Demo to show how Fluentbit plugin can scan AV models and publish over DDS",
   "difficulty": "Intermediate",
   "time": "10 minutes",
   "details": {
