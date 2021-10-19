@@ -4,4 +4,4 @@ Fluent-bit is an open source data collector that lets you unify the data collect
 
 Note: In this demo, only the mcaffee log file was configured.
 
-Now, let start up Fluent-bit!
+Let's start up Fluent-bit!
