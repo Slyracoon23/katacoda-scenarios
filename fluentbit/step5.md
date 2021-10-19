@@ -6,7 +6,7 @@ Let's take a look at our pods.
 
 We can see that our fluent-bit daemon has launched. Let's see the logging details
 
-`kubectl logs <POD>`
+`kubectl logs fluent-bit-<hash> -n logging`
 
 Well Done, we are parsing the output of the Mcafee! Let's see if DDS is being published.
 

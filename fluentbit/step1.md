@@ -1,4 +1,4 @@
-# Build an Deploy the ClamAV microservice
+# Build an Deploy the Mcafee microservice
 
 To begin, make sure your Kubernetes environment is set up. Once the terminal has finished outputting messages and is ready for input it should be setup. To confirm it is ready please run the following command:
 
@@ -13,4 +13,4 @@ In this example we will use Mcafee running in Docker.
 
 To do this use, the following command:
 
-`kubectl apply -f mcaffee-outpu.yaml`{{execute}}
+`kubectl apply -f mcaffee-output.yaml`{{execute}}

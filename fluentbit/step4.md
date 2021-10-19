@@ -6,7 +6,7 @@ First, let's create a new namespace for are Daemon Logger:
 
 Now we will give Fluent-Bit all permisions to the Kubernetes cluster
 
-`kubectl apply -f fluent-bit-role-1.22.yaml -f fluent-bit-role-binding-1.22.yaml -f fluent-bit-serrvice-account.yaml`{{execute}}
+`kubectl apply -f fluent-bit-role-1.22.yaml -f fluent-bit-role-binding-1.22.yaml -f fluent-bit-service-account.yaml`{{execute}}
 
 Once done, we can now run fluent-bit's configuratgion and Daemonset
 
