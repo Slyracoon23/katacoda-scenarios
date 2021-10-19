@@ -24,8 +24,9 @@ spec:
     spec:
       containers:
       - name: fluent-bit
-        image: earlpotters/rti-fluent-bit-plugin
+        image: earlpotters/rti-fluent-bit-plugin:map
         imagePullPolicy: Always
+        # command: [ "/bin/bash", "-c", "--", "while true; do sleep 30; done;" ]
         ports:
           - containerPort: 2020
         env:
@@ -40,7 +41,7 @@ spec:
           mountPath: /var/lib/docker/containers
           readOnly: true
         - name: fluent-bit-config
-          mountPath: /fluent-bit/etc/
+          mountPath: /fluent-bit/etc
       terminationGracePeriodSeconds: 10
       volumes:
       - name: varlog
