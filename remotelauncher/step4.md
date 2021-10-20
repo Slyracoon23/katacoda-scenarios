@@ -16,16 +16,16 @@ Looks like you can run Clamav!
 
 Let's start an instance:
 
-`node rtirlc.js new --cmdline '-domain 5' 4360a8ce6a27/ping`{{execute}}
+`node rtirlc.js new --cmdline '--connextdds=ClamScanParticipantLibrary::ClamScanParticipant::ClamScanPublisher::AntiVirusWriter  --verbose --stdout  --log=/logs/clamscan.log  --recursive --database=/data /tmp' 2782fe69098e/clamav`{{execute}}
 
 Cool you create your instance. Remember, when an instance is created it starts in a stop state. Let's try to change the state to a RUN state.
 
-`node rtirlc.js run -o 4360a8ce6a27/ping/1`{{execute}}
+`node rtirlc.js run -o  2782fe69098e/clamav/1`{{execute}}
 
 To check the output try attaching it.
 
 
-`node rtirlc.js attach -o 4360a8ce6a27/ping/1`{{execute}}
+`node rtirlc.js attach -o  2782fe69098e/clamav/1`{{execute}}
 
 
 Cool right! Remotelaucnher has executed a process over DDS.
