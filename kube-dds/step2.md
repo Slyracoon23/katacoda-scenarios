@@ -16,5 +16,7 @@ To view to logs of our pod, use the `logs <pod>` command:
 
 `kubectl logs $(kubectl get pods --no-headers -o custom-columns=":metadata.name")`{{execute}}
 
+The complicated `kubectl get pods --no-headers -o custom-columns=":metadata.name"` is getting your pod name.
+
 As you can see, the application is scanning for any viruses on the host machine.
 

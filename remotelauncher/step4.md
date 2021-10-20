@@ -42,6 +42,6 @@ To view the stdout, let's attach to the process
 
 Cool right! Remotelaucnher has executed a process over DDS.
 
-Checkout to see the DDS publications using rtiddsspy:
+Checkout to see the DDS publications of remotelauncher using rtiddsspy:
 
 `/root/remotelauncher-demo/bin/rtiddsspy -domainId 5`{{execute}}
